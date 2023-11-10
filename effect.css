@@ -1,0 +1,428 @@
+			.fronthome{
+			  position: absolute;
+			  left: 90px;
+			  top: 90px;
+			  background-color:gray;
+			  opacity: 20%;	
+			  width:900px;
+			  height: 400px;
+			  border-radius: 10px;
+			}
+			.fronthomesaabout{
+			  position: absolute;
+			  left: 90px;
+			  top: 90px;
+			  background-color:gray;
+			  opacity: 20%;	
+			  width:900px;
+			  height: 200px;
+			  border-radius: 10px;
+			}
+			.frontabout{
+			  position: absolute;
+			  left: 180px;
+			  top: 300px;
+			  background-color:gray;
+			  opacity: 20%;	
+			  width:400px;
+			  height: 210px;
+			  border-radius: 10px;
+			}
+			body{
+			  background-image:url("./images/bg.jpg");
+			}
+			
+			myset{
+			  position: absolute;
+			  left: 110px;
+			  top: 110px;
+			  color:White;
+			  font-size: 45px;
+			  font-family: 'Press Start 2P', sans-serif;
+			  text-shadow:0 0 30px violet, 0 0 5px violet;
+			}
+			
+			.mainpic{
+			  animation: fadeIn 4s;
+			  position: absolute;
+				right: 100px;
+				top: 150px;
+			}
+			@keyframes fadeIn {
+			  0% { opacity: 0; }
+			  25%{right:50px;}
+			  100% { opacity: 1; }
+			}
+			ul.myul {
+			  list-style-type: none;
+			  margin: 20;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: 1b223f;
+			  
+			}
+
+			li {
+			  float: right;
+			  font-family: 'Press Start 2P', sans-serif;
+			}
+			
+			washcar{
+			  font-family: 'Press Start 2P', sans-serif;
+			  text-shadow:0 0 20px violet, 0 0 5px violet;
+			  color: white;
+			  position: absolute;
+			  top: 250px;
+			  left: 200px;
+			  float: center;
+			  font-size: 20px;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  font-size: 20px;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover {
+			  background-color: #111;
+			  text-shadow:0 0 20px violet, 0 0 5px violet;
+			}
+			
+			.wrapper {
+				width: 200px;
+				position:absolute;
+				top: 320px;
+				left:200px;
+			}
+			
+			
+			.range1 {
+				  
+				  background-color: #333;
+				  width: 300px;
+				  height: 30px;
+				  transform: skew(30deg);
+				  font-family: 'Press Start 2P', monospace;
+				  
+				  &:before {
+					--width: calc(var(--p) * 1%);
+					
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 100%;
+					background-color: red;
+					z-index: 0;
+					animation: load 2s forwards linear;
+				  }
+				  
+				  &:after {
+					counter-reset: progress var(--p);
+					content: counter(progress) '%';
+					color: #white;
+					position: absolute;
+					left: 5%;
+					top: 50%;
+					transform: translateY(-50%) skewX(-30deg);
+					z-index: 1;
+				  }
+				}
+
+				@keyframes load {
+				  to {
+					width: var(--width);
+				  }
+				}
+
+			.range2 {
+				  
+				  background-color: #333;
+				  width: 300px;
+				  height: 30px;
+				  transform: skew(30deg);
+				  font-family: 'Press Start 2P', monospace;
+				  
+				  &:before {
+					--width: calc(var(--p) * 1%);
+					
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 100%;
+					background-color: green;
+					z-index: 0;
+					animation: load 2s forwards linear;
+				  }
+				  
+				  &:after {
+					counter-reset: progress var(--p);
+					content: counter(progress) '%';
+					color: #white;
+					position: absolute;
+					left: 5%;
+					top: 50%;
+					transform: translateY(-50%) skewX(-30deg);
+					z-index: 1;
+				  }
+				}
+
+				@keyframes load {
+				  to {
+					width: var(--width);
+				  }
+				}
+
+			.range3 {
+				  
+				  background-color: #333;
+				  width: 300px;
+				  height: 30px;
+				  transform: skew(30deg);
+				  font-family: 'Press Start 2P', monospace;
+				  
+				  &:before {
+					--width: calc(var(--p) * 1%);
+					
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 100%;
+					background-color: blue;
+					z-index: 0;
+					animation: load 2s forwards linear;
+				  }
+				  
+				  &:after {
+					counter-reset: progress var(--p);
+					content: counter(progress) '%';
+					color: #white;
+					position: absolute;
+					left: 5%;
+					top: 50%;
+					transform: translateY(-50%) skewX(-30deg);
+					z-index: 1;
+				  }
+				}
+
+				@keyframes load {
+				  to {
+					width: var(--width);
+				  }
+				}
+
+			proglabel{
+				color:white;
+				font-size:20px;
+				font-family: 'Press Start 2P';
+			}
+			.box { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            margin: auto; 
+            background-color: blue;
+			background-image:url("./images/finger.gif");
+			background-size: 80px 80px;
+            animation: GFG 0.5s infinite linear; 
+			position:absolute;
+			top: 550px;
+			left: 500px;
+			} 
+			.box:hover + .ilalabas{
+				display: block;
+				animation: fadeIn 1s;
+			}
+			.ilalabas{
+			position:absolute;
+			top: 500px;
+			left: 290px;
+			color: White;
+			text-shadow:0 0 30px violet, 0 0 5px violet;
+			font-size: 18px;
+			display: none;	
+			font-family: 'Press Start 2P', sans-serif;
+			}
+			
+			.vsimg{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 50px;
+				left: 600px;
+				  --color: white;
+				  --border: 10px;
+				  --offset: 20px; 
+				  --gap: 5px;
+				  
+				  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+				  --_o: calc(3*var(--offset));
+				  padding: 
+					calc(var(--gap) + var(--border))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border));
+				  background: 
+					linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+					linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+				  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+				  background-repeat: no-repeat;
+				  filter: grayscale(.4);
+				  transition: .5s;
+				  cursor: pointer;
+			}
+			.vsimg:hover{
+				background-position: 0px 0px;
+				  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+				  filter: grayscale(0);
+			}
+			
+			.vsimg1{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 50px;
+				left: 800px;
+				  --color: white;
+				  --border: 10px;
+				  --offset: 20px; 
+				  --gap: 5px;
+				  
+				  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+				  --_o: calc(3*var(--offset));
+				  padding: 
+					calc(var(--gap) + var(--border))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border));
+				  background: 
+					linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+					linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+				  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+				  background-repeat: no-repeat;
+				  filter: grayscale(.4);
+				  transition: .5s;
+				  cursor: pointer;
+			}
+			.vsimg1:hover{
+				background-position: 0px 0px;
+				  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+				  filter: grayscale(0);
+			}
+			.vsimg2{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 50px;
+				left: 1000px;
+				  --color: white;
+				  --border: 10px;
+				  --offset: 20px; 
+				  --gap: 5px;
+				  
+				  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+				  --_o: calc(3*var(--offset));
+				  padding: 
+					calc(var(--gap) + var(--border))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border) + var(--offset))
+					calc(var(--gap) + var(--border));
+				  background: 
+					linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+					linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+				  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+				  background-repeat: no-repeat;
+				  filter: grayscale(.4);
+				  transition: .5s;
+				  cursor: pointer;
+			}
+			.vsimg2:hover{
+				background-position: 0px 0px;
+				  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+				  filter: grayscale(0);
+				
+			}
+			.malagkit{
+				color:White;
+				font-size: 20px;
+				font-family: 'Press Start 2P' ;
+				position: absolute;
+				top: 560px;	
+				left: 1000px;
+				text-shadow:0 0 20px violet, 0 0 5px violet;
+			}
+			.lagkitan{
+				color:White;
+				font-size: 80px;
+				font-family: 'Press Start 2P';
+				position: absolute;
+				top: 330px;	
+				left: 200px;
+			}
+			.titeg{
+				position: absolute;
+				top: 280px;	
+				left: 200px;
+			}
+			.maincontact{
+				color:white;
+				font-size:20px;
+				font-family: 'Press Start 2P';
+				position: absolute;
+				top: 190px;
+				left: 100px;
+				text-shadow:0 0 20px violet, 0 0 5px violet;
+			}
+			.opacontact{
+			  position: absolute;
+			  left: 90px;
+			  top: 180px;
+			  background-color:gray;
+			  opacity: 20%;	
+			  width:670px;
+			  height: 80px;
+			  border-radius: 10px;
+			}
+			.mystatus{
+				position: absolute;
+				top: 300px;
+				left:50px;
+				
+			}
+			#resize{
+				width: 200px;
+				height: 200px;
+				border: 10px solid;
+				border-color: white;
+				padding: 30px;
+			}
+			
+			#resize:hover{
+				animation: rotation 1s infinite;
+			}
+			@keyframes rotation {
+			  0%   {background-color:red;}
+			  25%  {background-color:yellow;}
+			  50%  {background-color:blue;}
+			  75%  {background-color:green;}
+			  100% {background-color:red;}
+				}
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
